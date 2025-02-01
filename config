@@ -99,8 +99,7 @@ NFQWS_OPT="
  --hostlist=/opt/zapret/ipset/youtube.txt
  --dpi-desync=multidisorder
  --dpi-desync-split-seqovl=1
- --dpi-desync-split-pos=2
- --new 
+ --dpi-desync-split-pos=2 
 --filter-udp=443
  --hostlist=/opt/zapret/ipset/youtube.txt
  --dpi-desync=fake

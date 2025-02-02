@@ -98,15 +98,14 @@ NFQWS_UDP_PKT_IN=0
 NFQWS_OPT="
 --filter-tcp=443
  --hostlist=/opt/zapret/ipset/youtube.txt
- --dpi-desync=multidisorder
- --dpi-desync-split-seqovl=1
- --dpi-desync-split-pos=2 
+ --dpi-desync=fake,multisplit --dpi-desync-fooling=md5sig --wssize 1:6 --dpi-desync-split-pos=1 --dpi-desync-fake-tls-mod=rnd,rndsni,padencap 
+ --new 
 --filter-udp=443
  --hostlist=/opt/zapret/ipset/youtube.txt
  --dpi-desync=fake
  --dpi-desync-repeats=11
  --dpi-desync-fake-quic=/opt/zapret/files/fake/quic_initial_www_google_com.bin
- --new
+ --new 
 "
 
 
